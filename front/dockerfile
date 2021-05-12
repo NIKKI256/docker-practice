@@ -1,0 +1,4 @@
+FROM nginx:latest
+WORKDIR /usr/src/app
+COPY ./index.html /usr/src/app/index.html
+EXPOSE 8889

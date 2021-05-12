@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+    back:
+        build: ./back
+        volumes: 
+            - ./back:/usr/src/app
+        ports: 
+            - 8888:80
+    front:
+        build: ./front
+        volumes: 
+            - ./front:/usr/src/app
+        ports: 
+            - 8889:80
